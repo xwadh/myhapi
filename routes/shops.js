@@ -19,6 +19,11 @@ module.exports = [
           page: Joi.number().integer().min(1).default(1)
             .description('页码数'),
         },
+        // validate: {
+        //   params: {
+        //     orderId: Joi.string().min(3).required().error(new Error('订单号必须大于三位数')),      //抛出错误提示
+        //   }
+        // },
       },
     },
   },
